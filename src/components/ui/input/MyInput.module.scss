@@ -1,0 +1,42 @@
+.qrcode__input{
+    display: block;
+    width: 350px;
+    height: 50px;
+    padding: 3px 5px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    &::placeholder {
+        color: #212529;
+        opacity: 0.4;
+    }
+    &:focus {
+        color: #212529;
+        background-color: #fff;
+        border-color: #bdbdbd;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+    }
+    &-error{
+    @extend .qrcode__input;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    color: #212529;
+    border: 1px solid red;
+    &::placeholder {
+        color: #212529;
+        opacity: 0.4;
+    }
+    &:focus {
+        border-color: red;
+    }
+}
+}
+
+
